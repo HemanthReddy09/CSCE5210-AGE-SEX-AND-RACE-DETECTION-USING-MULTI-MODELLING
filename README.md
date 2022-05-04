@@ -2,6 +2,8 @@
 
 ## AGE, SEX, AND RACE DETECTION USING MULTI MODELLING
 
+![image](https://user-images.githubusercontent.com/90491571/166619191-286fc00b-b74a-458c-91ed-427fa8f62f24.png)
+
 ### TEAM:
 #### MANISH REDDY RADHA REDDY
 #### HEMANTH REDDY YERRAMREDDY
