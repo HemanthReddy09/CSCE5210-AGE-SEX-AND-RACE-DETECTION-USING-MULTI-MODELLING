@@ -16,16 +16,10 @@ The primary significance of the project is to extract more than one feature from
 ### OBJECTIVE:
 The project is based on detecting a human's face and determining the various characteristics. These features would include Age, Sex, and Race/Ethnicity. These would be the model’s features to classify the image and predict the subject's age, gender, and race. This project would be helpful to understand image processing and computer vision techniques. We intend to develop our own CNN model to make out predictions. Also, we want to use a state-of-the-art model in this project. The project would also use transfer learning to develop a multi-model to determine the age, sex from one model, and race from another model. This should enable the model to have significantly higher accuracy than previous ones. We would implement all these techniques, compare the results, and provide a detailed report. 
 
-### FEATURES:
-The dataset we want to use in this project is the UTKFace dataset. It is a large-scale dataset with over 20,000 images. The images are annotated with age, gender, and race. The images are in jpg format. The images are labeled as [age]_[gender]_[race]_[date&time].jpg. We will create a CSV file with image id and age, gender, and race adjacent to each image id from the dataset. We will be working on the images and the CSV file. The age feature is an integer value from o to 116 years; the gender is either 0 (male) or 1 (female); the race is an integer from 0 to 4 with each value indicating White, Black, Asian, Indian, and others (like Hispanic, Latino, Middle Eastern). 
+### The dataset
+The UTKFace dataset is a large dataset composed of over 20 thousand face images with their respectivce annotations of age, gender and ethnicity. The images are properly cropped into the face region, but display some variations in pose, illumination, resolution, etc.
 
-### REFERENCES:
-Vo, T., Nguyen, T., & Le, C. (2018). Race Recognition Using Deep Convolutional Neural Networks. Symmetry, 10(11), 564. https://doi.org/10.3390/sym10110564
+In order to retrieve the annotations of each record, we need to parse the filenames. Each record is stored in the following format: [age]_[gender]_[race]_[date&time].jpg
+Where: - age is an integer from 0 to 116 - gender is an integer in which 0 represents male and 1 represents female - race is an integer from 0 to 4, denoting white, black, asian, indian and others, respectively - date and time, denoting when the picture was taken
 
-Wu, X., Yuan, P., Wang, T., Gao, D., & Cai, Y. (2018). Race Classification from Face using Deep Convolutional Neural Networks. 2018 3rd International Conference on Advanced Robotics and Mechatronics (ICARM). https://doi.org/10.1109/icarm.2018.8610704
 
-Darabant, A. S., Borza, D., & Danescu, R. (2021). Recognizing Human Races through Machine Learning—A Multi-Network, Multi-Features Study. Mathematics, 9(2), 195. https://doi.org/10.3390/math9020195
-
-Rafique, I., Hamid, A., Naseer, S., Asad, M., Awais, M., & Yasir, T. (2019). Age and Gender Prediction using Deep Convolutional Neural Networks. 2019 International Conference on Innovative Computing (ICIC). https://doi.org/10.1109/icic48496.2019.8966704
-
-Saxena, A., Singh, P., & Narayan Singh, S. (2021). Gender and Age detection using Deep Learning. 2021 11th International Conference on Cloud Computing, Data Science & Engineering (Confluence). https://doi.org/10.1109/confluence51648.2021.9377041
